@@ -115,7 +115,7 @@ The parameter posteriors here were narrow, but maybe the vaviability of paramete
 ### Model and data
 
 @import "figures/Kylie_model.png"
-
+![](figures/Kylie_model.png)
 
 Kylies new protocol: 
 @import "figures/Kylie_protocol.png"

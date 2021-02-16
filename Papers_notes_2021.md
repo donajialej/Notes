@@ -1,14 +1,10 @@
 
-# Cardiac Noise 
-
----
-
-## Nonstationary Noise Analysis and Application
+# Nonstationary Noise Analysis and Application
 
 Paper by  STEFAN H. HEINEMANN and FRANCO CONTI
 DOI: 10.1016/0076-6879(92)07009-d
 
-### Some notes
+## Some notes
 
 
 Non-stationary fluctuations on the macro-scale can tell you about the single-channel dynamics
@@ -75,15 +71,13 @@ Membranes, channels & noise, book, 1984
 - Ch Non stat. noise analysis by F. J. Sig worth → feels like a nice fill in of the current chapter
 - Ch. Info of single channel data -> estimation of N (page 221), binomial asumption,
 
-
-
 ---
 ---
 
-## Kylie's sine protocol
+# Kylie's sine protocol
 DOI: 10.1113/JP275733
 
-### Paper
+## Paper
 
 **Math models of cardiac electro phsio @ core of protocols to replace human clinical trials!**
 
@@ -119,49 +113,11 @@ The parameter posteriors here were narrow, but maybe the vaviability of paramete
 Kylies new protocol: 
 ![Protocol](figures/Kylie_protocol.png)
 
-
 Other protocols:
 ![Other Protocol](figures/Kylie_otherProtocls.png)
-
-
-
 
 _how do I simulate that?_
 _how do I measuer the noise?, correlations?_
 
 ---
 ---
-
-
-## Biology "dictionary"
-
-- **I$_{kr}$**: Potassium current. Rapid delayed rectifier. Related to **KCNH2 gene ==hERG**. Traditionally name by the currents, now more about the genes.  Ikr is best know as a re polarising cardiac ion current but also important role, @ brain, gastro track, uterie contractions, cell proliferation + apoptosis,and cancer progression. Suceptible to pharma compounds, which are related to drug-induce pro-arrhythmic risk.
-
-- **CHO cells**  Chinee Hamster Ovary cells. It is a cell line that oer-express **hERG1a**. hERGa == One of the gene products of hERG.
-
----
----
-## Markdown tutorial
-
----
-Text attributes _italic_, **bold**, `monospace`. 
-
-Horizontal rule:
-
-
-Strikethrough: ~~strikethrough~~
-
-
-Bullet list:
-- apples
-- oranges
-    - hola
-* pears
-    * hola
-
-Numbered list: 
-1. lather 
-1. rinse 
-1. repeat
-
-$$ x=1 $$

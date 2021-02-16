@@ -1,10 +1,10 @@
 # Daily notes
 ## Equivalence of Markov models 
 Kylies model:  
-@import "Kylie_model.png"
+![Model](figures/Kylie_model.png)
 
 How about a simpler model? Just the green and red parts. 
-@import "figures/2021-01-27_GMmeeting.png"
+![Model](figures/2021-01-27_GMmeeting.png)
 
 Read online that the simpler model doesn't have independence on the gates (Inactive comes only form open), and so it doesn't have a HH equivalent. 
 

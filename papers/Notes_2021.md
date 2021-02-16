@@ -6,6 +6,7 @@
 ## Nonstationary Noise Analysis and Application
 
 Paper by  STEFAN H. HEINEMANN and FRANCO CONTI
+DOI: 10.1016/0076-6879(92)07009-d
 
 ### Some notes
 
@@ -80,6 +81,7 @@ Membranes, channels & noise, book, 1984
 ---
 
 ## Kylie's sine protocol
+DOI: 10.1113/JP275733
 
 ### Paper
 

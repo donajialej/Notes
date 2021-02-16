@@ -1,8 +1,7 @@
 
 # Nonstationary Noise Analysis and Application
 
-Paper by  STEFAN H. HEINEMANN and FRANCO CONTI
-DOI: 10.1016/0076-6879(92)07009-d
+Paper by  STEFAN H. HEINEMANN and FRANCO CONTI.  DOI: 10.1016/0076-6879(92)07009-d
 
 ## Some notes
 

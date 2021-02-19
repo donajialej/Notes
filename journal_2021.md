@@ -26,6 +26,30 @@ So, if $ O= ar, C = r(1-a), I= a(1-r), CI = (1-a)(1-r)$, the 2 state model is eq
 
 How can I prove if they are also the same in distribution? Let;s get to simulations
 
+# Simulating stoch systems with time varying rates
+
+So, now the waiting times are not just $\alpha * C(t)$, but the integral from the previous time to the step time:
+$$ \int_t^{t +\Delta t} \alpha(s) ds$$ 
+
+I'm mainly looking at these references: 
+-  Stochastic Representations of Ion Channel Kinetics and Exact Stochastic Simulation of Neuronal Dynamics, David F. Anderson et al, 2017 (arxiv version)
+- Simulation of biochemical reactions with time-dependent rates by the rejection-based algorithm Vo Hong Thanh and Corrado Priami, 2015, J of Chem phys. DOI: https://doi.org/10.1063/1.4927916
+- A Gillespie Algorithm for Non-Markovian Stochastic Processes, Naoki Masuda Luis E. C. Rocha, 2018 SIAM, DOI. 10.1137/16M1055876
+- RELATIONSHIP BETWEEN MEMBRANE EXCITABILITY AND SINGLE CHANNEL OPEN-CLOSE KINETICS, JOHN R. CLAY AND LOUIS J. DEFELICE, J biophy, 1983
+- Spontaneous Action Potentials due to Channel Fluctuations, Carson C. Chow and John A. White, Biophy J, 1996
+- A modified next reaction method for simulating chemical systems with time dependent propensities and delays, David F. Anderson, J. Chem. Phys. 127, 214107 (2007); DOI: https://doi.org/10.1063/1.2799998
+
+
+Extras:
+- Strong Error Analysis of the -Method for Stochastic Hybrid Systems, Martin G. Riedler and Girolama Notarangelo, 2018, arxiv version
+- Modeling the Stochastic Gating of Ion Channels, Ch 11 of some book, Gregory D. Smith
+- A perturbation analysis of spontaneous action potential initiation by stochastic ion channels, James P. Keener and Jay M. Newby
+- Breakdown of fast-slow analysis in an excitable system with channel noise Jay M. Newby, Paul C. Bressloff and James P. Keener, 2013, arxiv version
+- Mathematical and Computational Study of Markovian Models of Ion Channels in Cardiac Excitation, Tomáš Starý, their thesis, Exeter 2016
+
+
+
+
 
 
 

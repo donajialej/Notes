@@ -24,7 +24,7 @@ $$ \frac{da}{dt} = \alpha(1-a) - \beta a \\
 
 So, if $ O= ar, C = r(1-a), I= a(1-r), CI = (1-a)(1-r)$, the 2 state model is equivalente (mean fied) to the 4 reaction model mean field.
 
-How can I prove if they are also the same in distribution?
+How can I prove if they are also the same in distribution? Let;s get to simulations
 
 
 

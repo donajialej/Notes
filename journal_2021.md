@@ -13,14 +13,14 @@ Update on FEB 14th: need to compare 4 state model to 2 state model (a and r).
 
 Mean field equations for 4 reations model:
 
-$$ \frac{dC}{dt} = \delta CI + \beta O - (\alpha +\gamma)C \\
- \frac{dO}{dt} = \alpha C + \delta I - (\beta +\gamma)O \\
- \frac{dI}{dt} = \alpha CI + \gamma O - (\beta +\delta)I \\
- \frac{dCI}{dt} = \gamma C + \beta I - (\alpha +\delta)CI$$
+$$ \frac{dC}{dt} = \delta CI + \beta O - (\alpha +\gamma)C$$
+$$ \frac{dO}{dt} = \alpha C + \delta I - (\beta +\gamma)O $$
+$$ \frac{dI}{dt} = \alpha CI + \gamma O - (\beta +\delta)I $$
+$$ \frac{dCI}{dt} = \gamma C + \beta I - (\alpha +\delta)CI$$
 
 And the the 2 state model:
-$$ \frac{da}{dt} = \alpha(1-a) - \beta a \\ 
-\frac{dr}{dt} = \delta(1-r) - \gamma r $$
+$$ \frac{da}{dt} = \alpha(1-a) - \beta a $$ 
+$$ \frac{dr}{dt} = \delta(1-r) - \gamma r $$
 
 So, if $ O= ar, C = r(1-a), I= a(1-r), CI = (1-a)(1-r)$, the 2 state model is equivalente (mean fied) to the 4 reaction model mean field.
 
@@ -28,8 +28,8 @@ How can I prove if they are also the same in distribution? Let;s get to simulati
 
 # Simulating stoch systems with time varying rates
 
-So, now the waiting times are not just $\alpha * C(t)$, but the integral from the previous time to the step time:
-$$ \int_t^{t +\Delta t} \alpha_j(s) ds$$ 
+So, now the waiting times are not just $\alpha * X(t)$, but the integral from the previous time to the step time:
+$$ \int_t^{t +\Delta t} \alpha_j(s) X(s) ds$$ 
 
 And my model actually is sipler than thiers since we have explicit formula for V(t)and we have  $g_{Kr}$, and $E_K$  const, so no need do the DE part and model $I_{Kr}$ as:
 $$I_{Kr}(t) = g_{Kr} O(t) (V(t)-E_K)$$

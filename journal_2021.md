@@ -70,6 +70,9 @@ Extras:
 - A Gillespie Algorithm for Non-Markovian Stochastic Processes, Naoki Masuda Luis E. C. Rocha, 2018 SIAM, DOI. 10.1137/16M1055876
 
 
+# Myokit tutorial 
+
+WIP
 
 
 

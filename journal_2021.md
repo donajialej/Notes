@@ -79,7 +79,7 @@ Extras:
 - Myokit tutorial for the simple case
 - extend the version to stochastic version with variable V
 
-Today __March 2nd__ I'll run the myokit tutorial w/Jupyter notebooks that Michael sent me.
+Today __March 2nd__ I'll run the myokit tutorial w/Jupyter notebooks that Michael sent me. I continue with the tutorial on  __March 3th, March 4th__.
 - _Introduction_ ~~DONE~~
     Simple two-gate Hogdkin-Huxley model to describe channel kinetics, and an Ohmic term to describe the driving force: $$I(V, t) = g_\text{max} \cdot a(V, t) \cdot r(V, t) \cdot (V - E)$$ Here $g_\text{max}$ is the maximum conductance, determined by the number of channels and the conductance per channel, but assumed constant for this tutorial. 
     
@@ -100,11 +100,24 @@ Today __March 2nd__ I'll run the myokit tutorial w/Jupyter notebooks that Michae
 - Basic simulations
     Pretty easy to run the simulations! __Q:__ how does myokit.Simulation work?
     TIP: matplotlib "drawstyle" from "default" (connect any two points with a straight line) to "steps" (maintain the previous value until a new value is seen) drawstyle='steps-post'
+    __Q:__ how does myokit.Simulation gets t_max? It feels like it always simulate full protocol, and then we just take part of it in the log part. YES, tested and that is how it works. 
+    - log.keys() gives you the variables that "you simulated" 
+    - you can choose what to log: log = s.run(t_max, log_times=times, log=['ikr.IKr']) <-- like that you define the log times with an array "times" and then you choose your variables in "log = []" as a list
+    - You could modify parameter values and/or add new paramters w/o changing the code, but it will require to re-compile the simulation each time, so not encorage
+        par = model.get('par_name')         
+        
+        par.set_rhs(new_par_val)--- it could be a constant or an expresion
+    - instead using another method: simulation.set_constant 
+    - Also teach how set up initial conditions, and calculate st. st.
 - Basic fitting
+    - Skipped it for now
 - Fitting to different voltage protocols
     - Combining step protocols with sine waves or ramps
+        - teach how to add functions into the voltage definition
     - Simulating an AP protocol with "data clamp"
+        - basically the same as before, ie, loading time and v from a csv file
     - Analytical solvers for simple step protocols
+        -YEY! at the end of this one there is  single channel simulation
     - Fitting to multiple simple step protocols
 - Setting boundaries on model parameters
 - Selecting starting points for an optimisation

@@ -70,9 +70,48 @@ Extras:
 - A Gillespie Algorithm for Non-Markovian Stochastic Processes, Naoki Masuda Luis E. C. Rocha, 2018 SIAM, DOI. 10.1137/16M1055876
 
 
-# Myokit tutorial 
+# WIP 
 
-WIP
+## Need to have to simulate:
+- code
+- Parameters
+- Apparently I could import the model from the webpage on myokit 
+- Myokit tutorial for the simple case
+- extend the version to stochastic version with variable V
+
+Today __March 2nd__ I'll run the myokit tutorial w/Jupyter notebooks that Michael sent me.
+- _Introduction_ ~~DONE~~
+    Simple two-gate Hogdkin-Huxley model to describe channel kinetics, and an Ohmic term to describe the driving force: $$I(V, t) = g_\text{max} \cdot a(V, t) \cdot r(V, t) \cdot (V - E)$$ Here $g_\text{max}$ is the maximum conductance, determined by the number of channels and the conductance per channel, but assumed constant for this tutorial. 
+    
+    Basically the same as for Kylie's model. And then the parameters for the open-closed channel transitions follows the exponential definition before, $k_i = a_i\exp(b_iV)$. The tutorial noted that this parametrization decompose the rate into a voltage insensitive part $a_i$ and a voltage-sensitivity $b_i$. 
+    
+    $V=0 \implies k_i(V = 0) = a_i$:
+    - $a_i$ is a transition rate, in the same units and of roughly the same magnitude as $k_i$. 
+    - $b_i$ must be in units of one over voltage.
+    
+    For the Gatting part, they rewrite the two state equations from above in terms of the s.t. and rate to s.t.:
+    $$\frac{da}{dt} = (1 - a) k_1 - a k_2 = k_1 - (k_1 + k_2) a = \frac{\frac{k1}{k1 + k2} - a}{\frac{1}{k_1 + k_2}} = \frac{a_\infty - a}{\tau_a}$$
+    $$\frac{dr}{dt} =  \frac{r_\infty - r}{\tau_r}$$
+
+    The Beaty model is in the tutorial repo:  __resources/beattie-2017-ikr-hh.mmt__, $V=0$ in the code. I guess that is easy to change (and set up as a step function). Also, it is only for the mean-field version. Cool thing: __I can get the parameters from here.__
+    - There is the two state (HH version, with $O=ar$) and 4 state (Markov version). In the case of the Markov model, they also do only the mean field version.  
+    - There is also a code for the staircase scenario: __resources/simplified-staircase.mmt__
+    - Things to be aware of: the difference between log_for_interval and the protocol definition: Definition is right open, log is closed. _"Points that are not defined explicitly by the protocol are taken to be 0, explaining the apparent jump to 0mV at end of our plot."_
+- Basic simulations
+    Pretty easy to run the simulations! __Q:__ how does myokit.Simulation work?
+    TIP: matplotlib "drawstyle" from "default" (connect any two points with a straight line) to "steps" (maintain the previous value until a new value is seen) drawstyle='steps-post'
+- Basic fitting
+- Fitting to different voltage protocols
+    - Combining step protocols with sine waves or ramps
+    - Simulating an AP protocol with "data clamp"
+    - Analytical solvers for simple step protocols
+    - Fitting to multiple simple step protocols
+- Setting boundaries on model parameters
+- Selecting starting points for an optimisation
+- Searching in a transformed space
+- Running big fitting experiments
+- Validating modelling results
+- Dealing with real data
 
 
 

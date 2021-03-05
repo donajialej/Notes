@@ -117,7 +117,7 @@ Today __March 2nd__ I'll run the myokit tutorial w/Jupyter notebooks that Michae
     - Simulating an AP protocol with "data clamp"
         - basically the same as before, ie, loading time and v from a csv file
     - Analytical solvers for simple step protocols
-        -YEY! at the end of this one there is  single channel simulation
+        - YEY! at the end of this one there is  single channel simulation
     - Fitting to multiple simple step protocols
 - Setting boundaries on model parameters
 - Selecting starting points for an optimisation

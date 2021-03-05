@@ -118,6 +118,8 @@ Today __March 2nd__ I'll run the myokit tutorial w/Jupyter notebooks that Michae
         - basically the same as before, ie, loading time and v from a csv file
     - Analytical solvers for simple step protocols
         - YEY! at the end of this one there is  single channel simulation
+        - __So I stopped here and started focusing on the simulation for the single channel ...__ 
+
     - Fitting to multiple simple step protocols
 - Setting boundaries on model parameters
 - Selecting starting points for an optimisation

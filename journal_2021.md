@@ -129,7 +129,7 @@ Today __March 2nd__ I'll run the myokit tutorial w/Jupyter notebooks that Michae
 - Dealing with real data
 
 
-
+On __March 5th__, I moved to the jupyter notebook in the folder: _from_myokit_tutorial_
 
 
 

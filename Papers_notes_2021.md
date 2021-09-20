@@ -22,8 +22,8 @@ Scales: $i$ -> micro, $I$ -> macro, $\gamma$ -> macro.
 - Asume a binomial dist. for the number of open channels with parameters $N, p_\text{open}$. 
 - $i$ single channel current
 - $I(t) = iNp_o(t)$  mean current 
-- $\sigma^2(t)= iNp_o(t)(1-p_o(t))$ variance
-    -  Writing the variance on terms of N and current: $\sigma^2(I)= Ii-I/N$
+- $\sigma^2(t)= i^2Np_o(t)(1-p_o(t))$ variance
+    -  Writing the variance on terms of N and current: $\sigma^2(I)= Ii-I^2/N$
     - you can fit $i$ and $N$ from here!
 - In a sense, you calculate $\sigma^2, I$ from experiments, and $i,N$ parameters estimates.
 - Also, relate the single channel current w/ conductance: $\gamma =\frac{i}{E_{com}-E_{rev}}$
